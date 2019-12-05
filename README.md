@@ -1,7 +1,13 @@
 # MCP9808
 
 This is a library for running the MCP9808 temperature sensor from Adafruit, including all (?) of the features from the datasheet.
-It currently has a script for running the sensor off a PC from [an I2CDriver](https://i2cdriver.com/), scripts for the Raspberry Pi and CircuitPython are planned.  I may or may not write one for Arduino C.
+It currently has versions for running the sensor off a PC from [an I2CDriver](https://i2cdriver.com/), from a Raspberry Pi GPIO header and for running on CircuitPython boards.  I may or may not write one for Arduino C.
+
+# Current state
+
+The library is feature complete (?), but hasn't been extensively tested beyond messing around with it when I get a free evening.  Bugs may appear, and I can think of ways it could be written more elegantly.
+
+Just FYI: if you constantly get the same temperature reading make sure you haven't set the shutdown bit to `1`.  That has caught me out.
 
 # Basic use of the script
 
